@@ -6,7 +6,7 @@
 //  First compile the program
 //      javac HelloWorld.java
 //  run the program
-//      jave HelloWorld//
+//      java HelloWorld//
 
 //  define a class
 public class HelloWorld{
