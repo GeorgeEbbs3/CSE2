@@ -38,10 +38,14 @@ public class Root {
         double guess5= (2*guess4*guess4*guess4+poundCake)/(3*guess4*guess4);
         //now we make our sixth guess
         double guess6= (2*guess5*guess5*guess5+poundCake)/(3*guess5*guess5);
+        //now we cube the guess 6 to test its accuracy
+        double estimate= (guess6*guess6*guess6);
         
         
         //Now we are going to print out the cubed root!
         System.out.println("The Cubed Root is: "+ guess6);
+        // Now we cube that solution to test to see how accurate it is
+        System.out.println("The original double was: "+ estimate);
         
         
        
