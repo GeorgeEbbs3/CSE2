@@ -25,7 +25,10 @@ public class BigMacAgain {
     System.out.print("Please enter the number of Big Macs you want (as an integer >0): ");
     
     //define BigMacs
-    int nBigMacs;
+    int nBigMacs=0;
+   
+    
+    
     
     //Now we want to make sure an int was entered
     if(myScanner.hasNextInt()) {
@@ -47,16 +50,28 @@ public class BigMacAgain {
                 //program terminates
     }
     
+    double cost$= nBigMacs*(2.22);
+    double totalBill=cost$+(2.15);
+    
+    
     //now we calculate the price of the Big Macs
     if(nBigMacs>0)  {
-        double cost$;
-    cost$= nBigMacs*(2.22);
     System.out.println("The price of your BigMac purchase is: "+ cost$ );
     }
     //lets make a if statement for fries
-    if(myScanner.next()) {
+    System.out.println("Would you like to add fries to your meal? Y (or y) / N (or n)");
+    String fries = myScanner.next().toUpperCase(); //so we use a string scanner in order to account of letters instead of numbers
     
-    char Y= myScanner.next().charAt(0); //make outside if statement!
+    if (fries.equals("Y")){
+        System.out.println("Your order for fries will add $2.15 to the bill");
+        System.out.printf("Your new total for the bill will be: %.2f ",totalBill);
+     }else if(fries.equals("N")){
+         System.out.println("Your order will remain at the price of: "+ cost$);
+     }else{
+         System.err.println("You have not entered a valid answer");
+         return; //terminates the program
+     }
+     
     
     }
 }
