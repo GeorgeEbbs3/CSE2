@@ -99,7 +99,7 @@ public class BoolaBoola {
             correct = false;
         }
     }else{
-        if(answer.equals("t") || answer.equals("t")) { //if they put in the t or T they answer True
+        if(answer.equals("t") || answer.equals("T")) { //if they put in the t or T they answer True
             correct = true;
         }else{
             correct = false;
