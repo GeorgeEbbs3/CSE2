@@ -45,15 +45,15 @@ public class BurgerKing {
                  case 'A': //if they want a loaded burger
                  case 'a':
                      System.out.println("You ordered a burger with 'All the fixins' ");
-                     break;
+                     return;
                  case 'C':
                  case 'c': //if they want just cheese
                     System.out.println("You ordered a burger with cheese ");
-                    break;
+                    return;
                  case 'N':
                  case 'n': //if they want a plain burger
                     System.out.println("You ordered a plain burger ");
-                    break;
+                    return;
                 default:
                     System.out.println("You didn't input an option ");
                     return;
@@ -73,19 +73,19 @@ public class BurgerKing {
                 case 'P'://if they chose pepsi
                 case 'p':
                     System.out.println("You ordered a Pepsi ");
-                    break;
+                    return;
                 case 'C': //if they chose coke
                 case 'c':
                     System.out.println("You ordered a Coke ");
-                    break;
+                    return;
                 case 'S': //if they chose sprite
                 case 's':
                     System.out.println("You ordered a Sprite ");
-                    break;
+                    return;
                 case 'M': //if they ordered mountain dew
                 case 'm':
                     System.out.println("You ordered a Mountain Dew ");
-                    break;
+                    return;
                 default: //in case they didnt enter one of the values
                     System.out.println("You didnt enter an option ");
                     return;
@@ -103,11 +103,11 @@ public class BurgerKing {
                     case 'L': //for larger fries
                     case 'l':
                         System.out.println("You ordered a large fries ");
-                        break;
+                        return;
                     case 'S': //for small fries
                     case 's':
                         System.out.println("You ordered a small fries ");
-                        break;
+                        return;
                     default: // in case they entered something wrong
                         System.out.println("You did not enter a valid answer ");
                         return;

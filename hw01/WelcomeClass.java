@@ -13,6 +13,10 @@ public class WelcomeClass{
     
 //  add main method
     public static void main(String[ ] args) {
+        
+    int myAge = (int) (3.7 / 33.30);
+    Boolean truthValue = 2.4 == 2.5;
+    double myDecimal = (double) (3+4/6);
     
     //Print the Text Below
     System.out.println("   -----------");
@@ -23,6 +27,10 @@ public class WelcomeClass{
     System.out.println("|-G--H--E--2--1--8-|");
     System.out.println(" \\ /\\ /\\ /\\ /\\ /\\ /");
     System.out.println("  v  v  v  v  v  v");
+    System.out.println(truthValue);
+    System.out.println(myAge);
+    System.out.println(myDecimal);
+    
     
     //Now we print the Tweet
     System.out.println("I have lived in several states, inlcuding overseas--Dubai.");
