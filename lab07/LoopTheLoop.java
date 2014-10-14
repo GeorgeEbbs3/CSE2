@@ -28,7 +28,7 @@ public class LoopTheLoop {
             String Stars= "*";
             
             while(counter<=nStars){
-                System.out.println( Stars);
+                System.out.println(Stars);
                 Stars="*" + Stars;
                 counter++;
             }
