@@ -10,30 +10,36 @@
  */
 
 import java.util.Scanner; //initialized the scanner
-public class Enigma0{
+public class Enigma0 {
   public static void main(String arg []){
+    Scanner myScanner;
+    myScanner=new Scanner(System.in);
     System.out.print("Enter an int- ");
-    Scanner scan=new Scanner(System.in);
-    if(scan.hasNextInt()){
-      int n=scan.nextInt();
+    int n=0;
+    if(myScanner.hasNextInt()){
+      n=myScanner.nextInt();
       System.out.println("You entered "+n);
+      int k=4,p=6,q=7,r=8;
+      int total=(k+p+q+r);
+      System.out.println("The sum is: "+ total);
+      System.out.println("Again, you entered "+n);
+      
     }
     else{
-      int n=4;
-      System.out.println("You entered "+n);
+      System.out.println("You did not enter an int");
+      return; //end of program
     }
-    
-    int k=4,p=6,q=7,r=8,n;
-    switch(k+p+q+r){
-      case 24: 
-      case 25: System.out.println("sum is 25");
-      default:
-        System.out.println("To repeat, you entered "+n);
-    }
+
   }
 }
 
 /* Error report:
- *   Expand this comment:
- *   Explain the error(s) that occurred here, and then fix them
+ *   Before you as the user if they can imput a number, you should declare the scanner.
+ *   Move the scanner constructor before the input
+ *   Then all you have to do is use the name of it instead of Scanner scan in line 17
+ *   We need to initialize the variable n before we check to make sure the number was an int
+ *   After the else, we just want to exit the program becuase the value wasnt an int
+ *   Case 24 is not needed, therefore switch statement can be removed
+ *   Now we want to put the whole sum (part 2) opperation in the if statement so the n value remains the same
+     because the sum of the numbers will always be 25! 
  */
