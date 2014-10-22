@@ -10,11 +10,24 @@
 
 //  define a class
 public class HelloWorld{
-    
-//  add main method
+    //  add main method
     public static void main(String[ ] args) {
+     
+    for (int x=1; x<6; x++){
         
-//  print the statement with box around it
+        for (int y=x+1; y<7; y++){
+            System.out.println(x + " " + y);
+        }
+    //System.out.println(x + " " + y);
+    }
+
+    
+
+        
+       
+
+        
+/*  print the statement with box around it
     System.out.println("########################");
     System.out.println("########################");
     System.out.println("#                      #");
@@ -25,5 +38,6 @@ public class HelloWorld{
     System.out.println("test");
     
     //test/testtest
+    */
     }
 }

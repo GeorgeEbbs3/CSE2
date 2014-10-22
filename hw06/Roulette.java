@@ -39,7 +39,7 @@ int totalWinnings=0; //the total amount you won!
         }
         counter=0; //reset the counter so the inner loop will run again
         
-        if(winnings==0){
+        if(winnings<=0){
             lostEverything=+1; //adds it to the total
         }else if (winnings>100){
             profit+=1;

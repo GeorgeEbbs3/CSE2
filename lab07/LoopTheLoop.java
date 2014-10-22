@@ -15,28 +15,44 @@ public class LoopTheLoop {
     //now we are calling the Scanner Constructor 
     myScanner = new Scanner( System.in );
     
+    while(true){
     //Promp them to enter a number the want for the number of stars
-    System.out.println(" Please enter an int between 1 and 15: ");
+    System.out.print(" Please enter an int between 1 and 15: ");
     //make a counter
-    int counter=0;
+    int counter=1;
     //make the int nStars and store a scanner in it
     int nStars= myScanner.nextInt();
     //if it is in the range
-    if(nStars>1 && nStars<15){
-        while(counter<=nStars){
-            counter=1;
-            String Stars= "*";
-            
-            while(counter<=nStars){
-                System.out.println(Stars);
-                Stars="*" + Stars;
+    if(nStars>=1 && nStars<=15){
+            while(counter<nStars){
+                String Stars= "*";
+                System.out.print(Stars);
                 counter++;
             }
+                counter=0;
+                while(counter<=nStars){
+                    counter=1;
+                    String Stars= "*";
+                    System.out.println(Stars);
+                
+                    while(counter<=nStars){
+                        System.out.println(Stars);
+                        Stars="*" + Stars;
+                        counter++;
+                }
+            }
+        System.out.print("Enter 'Y or y' to go again: ");
+        String answer=myScanner.next();
+        
+        if(answer.equals("y") || answer.equals("Y")){
+        }else{
+            return;
         }
     }else{
         System.out.println("Your int was not in the range [1.15]");
         return; //ends the program
     }
+}
         
 
 
